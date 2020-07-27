@@ -112,7 +112,7 @@
          "que é feito por "
          (twitter-name "morganastra")
          ", cujo "
-         (href "https://pronom.es/ela" "pronome é ela/dela")]
+         (href "https://pronom.es/ela" "pronome é ela/dela")
          "! visite o projeto no "
          (href "https://github.com/biancarosa/pronom.es" "github")]
      [:p "&lt;3"]]))
