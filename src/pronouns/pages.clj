@@ -95,7 +95,7 @@
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
        [:tt "https://pronoun.is/subject-pronoun/object-pronoun/possessive-determiner/possessive-pronoun/reflexive"]
-       " mostra exemplos do seu pronome.."]
+       " mostra exemplos do seu pronome.."])
   ;  [:p "This is a bit unwieldy. If we have a good guess we'll let you use"
   ;      " just the first one or two."]])
 
