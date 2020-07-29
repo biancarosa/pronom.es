@@ -93,7 +93,7 @@
    [:p "Uso completo: "
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
-       [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/pronome-possessivo/pronome-reflexivo"]
+       [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
        " mostra exemplos do seu pronome.."]])
   ;  [:p "This is a bit unwieldy. If we have a good guess we'll let you use"
   ;      " just the first one or two."]])
