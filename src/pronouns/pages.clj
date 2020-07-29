@@ -91,7 +91,7 @@
 
 (defn usage-block []
   [:div {:class "section usage"}
-   [:p "Uso completo "
+   [:p "Uso completo: "
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
        [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
@@ -107,7 +107,7 @@
          (twitter-name "__biancarosa")
          ", cujo "
          (href "https://pronom.es/ela" "pronome é ela/dela.")]
-     [:p "pronom.es é um fork do"
+     [:p "pronom.es é um fork do "
          (href "pronoun.is" "pronoun.is")
          " que é feito por "
          (twitter-name "morganastra")
