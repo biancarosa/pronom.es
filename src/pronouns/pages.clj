@@ -75,7 +75,7 @@
    (href "/" [:h1 header])])
 
 (defn examples-block
-  [subject object possessive-pronoun reflexive]
+  [subject object posessive-determiner-example possessive-pronoun reflexive]
   (let [sub-obj (s/join "/" [subject object])
         header-str (str "Aqui estão exemplos de frases usando meus "
                         sub-obj
