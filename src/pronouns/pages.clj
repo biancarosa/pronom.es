@@ -53,10 +53,8 @@
 
 (defn posessive-determiner-example
   [subject possessive-determiner]
-  (render-sentence (wrap-pronoun (s/capitalize subject))
-                   " trouxe "
-                   (wrap-pronoun possessive-determiner)
-                   " frisbee."))
+  (render-sentence " O frisbee é "
+                   (wrap-pronoun possessive-determiner)))
 
 (defn possessive-pronoun-example
   [possessive-pronoun]
