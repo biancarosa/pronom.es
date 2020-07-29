@@ -51,11 +51,11 @@
   [object]
   (render-sentence "Eu fui com " (wrap-pronoun object) "."))
 
-(defn posessive-determiner-example
-  [subject possessive-determiner]
-  (render-sentence " O frisbee é "
-                   (wrap-pronoun possessive-determiner)
-                   ))
+; (defn posessive-determiner-example
+;   [subject possessive-determiner]
+;   (render-sentence " O frisbee é "
+;                    (wrap-pronoun possessive-determiner)
+;                    ))
 
 (defn possessive-pronoun-example
   [possessive-pronoun]
@@ -75,7 +75,7 @@
    (href "/" [:h1 header])])
 
 (defn examples-block
-  [subject object possessive-determiner possessive-pronoun reflexive]
+  [subject object possessive-pronoun reflexive]
   (let [sub-obj (s/join "/" [subject object])
         header-str (str "Aqui estão exemplos de frases usando meus "
                         sub-obj
@@ -84,7 +84,7 @@
      [:h2 header-str]
      [:p (subject-example subject)
          (object-example object)
-         (posessive-determiner-example subject possessive-determiner)
+        ;  (posessive-determiner-example subject possessive-determiner)
          (possessive-pronoun-example possessive-pronoun)
          (reflexive-example subject reflexive)]]))
 
@@ -93,7 +93,7 @@
    [:p "Uso completo: "
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
-       [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
+       [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/pronome-possessivo/pronome-reflexivo"]
        " mostra exemplos do seu pronome.."]])
   ;  [:p "This is a bit unwieldy. If we have a good guess we'll let you use"
   ;      " just the first one or two."]])
