@@ -60,7 +60,7 @@
 
 (defn possessive-pronoun-example
   [possessive-pronoun]
-  (render-sentence "Pelo menos eu acho que eu era "
+  (render-sentence "Acho que isso era "
                    (wrap-pronoun possessive-pronoun)
                    "."))
 
