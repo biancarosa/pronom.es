@@ -107,7 +107,7 @@
          ", cujo "
          (href "https://pronom.es/ela" "pronome é ela/dela.")]
      [:p "pronom.es é um fork do "
-         (href "pronoun.is" "pronoun.is")
+         (href "https://pronoun.is" "pronoun.is")
          " que é feito por "
          (twitter-name "morganastra")
          ", cujo "
