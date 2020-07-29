@@ -54,7 +54,8 @@
 (defn posessive-determiner-example
   [subject possessive-determiner]
   (render-sentence " O frisbee é "
-                   (wrap-pronoun possessive-determiner)))
+                   (wrap-pronoun possessive-determiner)
+                   ))
 
 (defn possessive-pronoun-example
   [possessive-pronoun]
