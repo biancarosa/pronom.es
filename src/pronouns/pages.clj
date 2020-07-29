@@ -91,10 +91,10 @@
 
 (defn usage-block []
   [:div {:class "section usage"}
-   [:p "Full usage: "
+   [:p "Uso completo "
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
-       [:tt "https://pronoun.is/subject-pronoun/object-pronoun/possessive-determiner/possessive-pronoun/reflexive"]
+       [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
        " mostra exemplos do seu pronome.."]])
   ;  [:p "This is a bit unwieldy. If we have a good guess we'll let you use"
   ;      " just the first one or two."]])
@@ -103,17 +103,17 @@
   (let [twitter-name (fn [handle] (href (str "https://www.twitter.com/" handle)
                                        (str "@" handle)))]
     [:div {:class "section contact"}
-     [:p "Feito por "
+     [:p "traduzido por "
          (twitter-name "__biancarosa")
          ", cujo "
-         (href "https://pronom.es/ela" "pronome é ela/dela")]
+         (href "https://pronom.es/ela" "pronome é ela/dela.")]
      [:p "pronom.es é um fork do"
          (href "pronoun.is" "pronoun.is")
-         "que é feito por "
+         " que é feito por "
          (twitter-name "morganastra")
          ", cujo "
          (href "https://pronom.es/ela" "pronome é ela/dela")
-         "! visite o projeto no "
+         ". visite o projeto no "
          (href "https://github.com/biancarosa/pronom.es" "github")]
      [:p "&lt;3"]]))
 
@@ -123,7 +123,7 @@
 (defn format-pronoun-examples
   [pronoun-declensions]
   (let [sub-objs (map #(s/join "/" (take 2 %)) pronoun-declensions)
-        title (str "Pronoun Island: " (prose-comma-list sub-objs) " examples")
+        title (str "Ilha dos Pronomes: " (prose-comma-list sub-objs) " exemplos")
         examples (map #(apply examples-block %) pronoun-declensions)]
     (html
      [:html
