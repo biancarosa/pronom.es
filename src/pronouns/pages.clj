@@ -120,7 +120,7 @@
 (defn format-pronoun-examples
   [pronoun-declensions]
   (let [sub-objs (map #(s/join "/" (take 2 %)) pronoun-declensions)
-        title (str "Ilha dos Pronomes: exemplos com " (prose-comma-list sub-objs))
+        title (str "Ilha dos Pronomes: exemplos")
         examples (map #(apply examples-block %) pronoun-declensions)]
     (html
      [:html
