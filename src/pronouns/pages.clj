@@ -77,9 +77,7 @@
 (defn examples-block
   [subject object posessive-determiner-example possessive-pronoun reflexive]
   (let [sub-obj (s/join "/" [subject object])
-        header-str (str "Aqui estão exemplos de frases usando meus "
-                        sub-obj
-                        " pronomes:")]
+        header-str (str "Aqui estão exemplos de frases usando meus pronomes:")]
     [:div {:class "section examples"}
      [:h2 header-str]
      [:p (subject-example subject)
@@ -94,7 +92,7 @@
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
        [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
-       " mostra exemplos do seu pronome.."]])
+       " mostra exemplos do seu pronome."]])
   ;  [:p "This is a bit unwieldy. If we have a good guess we'll let you use"
   ;      " just the first one or two."]])
 
