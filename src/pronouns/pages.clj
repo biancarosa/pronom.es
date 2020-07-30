@@ -81,37 +81,37 @@
     [:div {:class "section examples"}
      [:h2 header-str]
      [:p (subject-example subject)
-         (object-example object)
+      (object-example object)
         ;  (posessive-determiner-example subject possessive-determiner)
-         (possessive-pronoun-example possessive-pronoun)
-         (reflexive-example subject reflexive)]]))
+      (possessive-pronoun-example possessive-pronoun)
+      (reflexive-example subject reflexive)]]))
 
 (defn usage-block []
   [:div {:class "section usage"}
    [:p "Uso completo: "
     ;; FIXME morgan.astra <2018-11-14 Wed>
     ;; This looks really ugly in the browser
-       [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
-       " mostra exemplos do seu pronome."]])
+    [:tt "http://www.pronom.es/pronome-sujeito/pronome-objeto/determinante-possessivo/pronome-possessivo/pronome-reflexivo"]
+    " mostra exemplos do seu pronome."]])
   ;  [:p "This is a bit unwieldy. If we have a good guess we'll let you use"
   ;      " just the first one or two."]])
 
 (defn contact-block []
   (let [twitter-name (fn [handle] (href (str "https://www.twitter.com/" handle)
-                                       (str "@" handle)))]
+                                        (str "@" handle)))]
     [:div {:class "section contact"}
      [:p "traduzido por "
-         (twitter-name "__biancarosa")
-         ", cujo "
-         (href "https://pronom.es/ela" "pronome é ela/dela.")]
+      (twitter-name "__biancarosa")
+      ", cujo "
+      (href "https://pronom.es/ela" "pronome é ela/dela.")]
      [:p "pronom.es é um fork do "
-         (href "https://pronoun.is" "pronoun.is")
-         " que é feito por "
-         (twitter-name "morganastra")
-         ", cujo "
-         (href "https://pronom.es/ela" "pronome é ela/dela")
-         ". visite o projeto no "
-         (href "https://github.com/biancarosa/pronom.es" "github")]
+      (href "https://pronoun.is" "pronoun.is")
+      " que é feito por "
+      (twitter-name "morganastra")
+      ", cujo "
+      (href "https://pronom.es/ela" "pronome é ela/dela")
+      ". visite o projeto no "
+      (href "https://github.com/biancarosa/pronom.es" "github")]
      [:p "&lt;3"]]))
 
 (defn footer-block []
@@ -120,7 +120,7 @@
 (defn format-pronoun-examples
   [pronoun-declensions]
   (let [sub-objs (map #(s/join "/" (take 2 %)) pronoun-declensions)
-        title (str "Ilha dos Pronomes: " (prose-comma-list sub-objs) " exemplos")
+        title (str "Ilha dos Pronomes: exemplos com " (prose-comma-list sub-objs))
         examples (map #(apply examples-block %) pronoun-declensions)]
     (html
      [:html
