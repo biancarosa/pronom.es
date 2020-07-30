@@ -103,13 +103,13 @@
      [:p "traduzido por "
       (twitter-name "__biancarosa")
       ", cujo "
-      (href "https://pronom.es/ela" "pronome é ela/dela.")]
+      (href "https://pronom.es/ela" "pronome é ela.")]
      [:p "pronom.es é um fork do "
       (href "https://pronoun.is" "pronoun.is")
       " que é feito por "
       (twitter-name "morganastra")
       ", cujo "
-      (href "https://pronom.es/ela" "pronome é ela/dela")
+      (href "https://pronom.es/ela" "pronome é ela")
       ". visite o projeto no "
       (href "https://github.com/biancarosa/pronom.es" "github")]
      [:p "&lt;3"]]))
